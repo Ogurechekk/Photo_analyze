@@ -13,7 +13,7 @@
 
 ```bash
 git clone https://github.com/Ogurechekk/Photo_analyze
-cd Photo-analyze
+cd Photo_analyze
 ```
 
 2. Создайте виртуальное окружение:
