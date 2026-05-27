@@ -116,7 +116,7 @@ torch.serialization.add_safe_globals([DetectionModel, torch.nn.modules.container
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max-limit
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB максимальный лимит
 
 try:
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
