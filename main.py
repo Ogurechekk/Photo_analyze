@@ -7,6 +7,10 @@ train_results = model.train(
     epochs=100,  # Количество периодов обучения
     imgsz=640,  # Размер изображения для тренировки
     device="cpu", # Устройство для запуска (например, 'cpu', 0, [0,1,2,3])
+
+    project="runs/train",   # главная папка результатов
+    name="exp",             # имя эксперимента
+    exist_ok=True           # не перезаписывать, а создавать exp2, exp3...
 )
 
 metrics = model.val()
